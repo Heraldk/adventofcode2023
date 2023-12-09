@@ -1,7 +1,8 @@
-from common import AdventSolution
+import re
 from dataclasses import dataclass
 from functools import reduce
-import re
+
+from common import AdventSolution
 
 
 @dataclass
@@ -62,4 +63,5 @@ class Day02(AdventSolution):
                 * min_cube.get("green", 0)
                 for min_cube in min_cubes
             ]
+            print(sum(powers))
             print(sum(powers))
